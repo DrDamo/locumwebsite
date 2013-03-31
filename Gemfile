@@ -11,7 +11,6 @@ gem 'sqlite3'
 
 gem 'haml'
 gem 'haml-rails'
-gem ''
 
 # My additions
 
