@@ -9,7 +9,8 @@ gem 'sqlite3'
 
 # My additions
 
-
+gem 'haml'
+gem 'haml-rails'
 
 # My additions
 
