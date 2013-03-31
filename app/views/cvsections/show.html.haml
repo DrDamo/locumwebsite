@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @cvsection.title
+%p
+  %b Location:
+  = @cvsection.location
+%p
+  %b Content:
+  = @cvsection.content
+
+= link_to 'Edit', edit_cvsection_path(@cvsection)
+\|
+= link_to 'Back', cvsections_path

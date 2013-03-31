@@ -1,0 +1,23 @@
+%h1 Listing cvsections
+
+%table
+  %tr
+    %th Title
+    %th Location
+    %th Content
+    %th
+    %th
+    %th
+
+  - @cvsections.each do |cvsection|
+    %tr
+      %td= cvsection.title
+      %td= cvsection.location
+      %td= cvsection.content
+      %td= link_to 'Show', cvsection
+      %td= link_to 'Edit', edit_cvsection_path(cvsection)
+      %td= link_to 'Destroy', cvsection, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Cvsection', new_cvsection_path
