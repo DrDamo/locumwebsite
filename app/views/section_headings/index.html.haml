@@ -1,0 +1,23 @@
+%h1 Listing section_headings
+
+%table
+  %tr
+    %th Name
+    %th Position
+    %th Desc
+    %th
+    %th
+    %th
+
+  - @section_headings.each do |section_heading|
+    %tr
+      %td= section_heading.name
+      %td= section_heading.position
+      %td= section_heading.desc
+      %td= link_to 'Show', section_heading
+      %td= link_to 'Edit', edit_section_heading_path(section_heading)
+      %td= link_to 'Destroy', section_heading, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Section heading', new_section_heading_path

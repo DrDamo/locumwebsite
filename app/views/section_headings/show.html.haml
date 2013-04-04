@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @section_heading.name
+%p
+  %b Position:
+  = @section_heading.position
+%p
+  %b Desc:
+  = @section_heading.desc
+
+= link_to 'Edit', edit_section_heading_path(@section_heading)
+\|
+= link_to 'Back', section_headings_path
