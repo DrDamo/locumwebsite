@@ -1,4 +1,7 @@
 Doctordamian::Application.routes.draw do
+  resources :section_headings
+
+
   resources :cvsections
 
 
